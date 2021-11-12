@@ -80,7 +80,7 @@ int main() {
   cuadrado1.setladoCua(5);
   areaCua = cuadrado1.CalcAreaCua();
   cout << "El área del cuadrado es " << areaCua << " ";
-  cout << "si el lado vale " << cuadrado1.get_ladoCua() << " ";
+  cout << "si el lado vale " << cuadrado1.get_ladoCua() << endl;
   return 0;
 
   // Para Rectangulo
@@ -102,7 +102,7 @@ int main() {
 
   circulo3.setradioCirc(6);
   areaCirc =circulo3.CalcAreaCirc();
-  cout << "El área del círculo es " << areaCirc << endl;
+  cout << "El área del círculo es " << areaCirc << " ";
   cout << "si el radio vale " << circulo3.get_radioCirc() << endl;
   return 0;
 } 
