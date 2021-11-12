@@ -11,13 +11,16 @@
 
 #include <iostream>
 #include "areas.h"
-#include <string>
 using namespace std;
 
 // Para Cuadrado
 
 double Cuadrado::CalcAreaCua(){
   return ladoCua * ladoCua;
+}
+
+double Cuadrado::get_ladoCua(){
+  return ladoCua;
 }
 
 void Cuadrado::setladoCua(double laCua){
@@ -64,7 +67,8 @@ int main() {
   
   cuadrado1.setladoCua(5);
   areaCua = cuadrado1.CalcAreaCua();
-  cout << "El área del cuadrado es: " << areaCua << endl;
+  cout << "El área del cuadrado es: " << areaCua << " ";
+  cout << "si el lado vale " << cuadrado1.get_ladoCua() << " ";
   return 0;
 
   // Para Rectangulo
