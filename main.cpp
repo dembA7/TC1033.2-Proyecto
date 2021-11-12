@@ -34,6 +34,14 @@ double Rectangulo::CalcAreaRec(){
   return largoRec*anchoRec;
 }
 
+double Rectangulo::get_largoRec(){
+  return largoRec;
+}
+
+double Rectangulo::get_anchoRec(){
+  return anchoRec;
+}
+
 void Rectangulo::setlargoRec(double laRec){
   largoRec = laRec;
 }
@@ -47,6 +55,10 @@ void Rectangulo::setanchoRec(double anRec){
 
 double Circulo::CalcAreaCirc(){
   return 3.14 * radioCirc * radioCirc;
+}
+
+double Circulo::get_radioCirc(){
+  return radioCirc;
 }
 
 void Circulo::setradioCirc(double radCirc){
@@ -67,7 +79,7 @@ int main() {
   
   cuadrado1.setladoCua(5);
   areaCua = cuadrado1.CalcAreaCua();
-  cout << "El área del cuadrado es: " << areaCua << " ";
+  cout << "El área del cuadrado es " << areaCua << " ";
   cout << "si el lado vale " << cuadrado1.get_ladoCua() << " ";
   return 0;
 
@@ -79,7 +91,8 @@ int main() {
   rectangulo2.setlargoRec(10);
   rectangulo2.setanchoRec(5);
   areaRec = rectangulo2.CalcAreaRec();
-  cout << "El área del rectángulo es: " << areaRec << endl;
+  cout << "El área del rectángulo es " << areaRec << endl;
+  // cout << "si el largo vale " << rectangulo2.get_largoRec() << "y el ancho vale " << rectangulo2.get_anchoRec(); << " ";
   return 0;
 
   // Para Circulo
@@ -89,6 +102,7 @@ int main() {
 
   circulo3.setradioCirc(6);
   areaCirc =circulo3.CalcAreaCirc();
-  cout << "El área del círculo es: " << areaCirc << endl;
+  cout << "El área del círculo es " << areaCirc << endl;
+  cout << "si el radio vale " << circulo3.get_radioCirc() << endl;
   return 0;
 } 
