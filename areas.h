@@ -8,7 +8,6 @@
 // Creación de clases.
 
 #include <iostream>
-#include <string>
 using namespace std;
 
 class Cuadrado{
@@ -16,6 +15,7 @@ class Cuadrado{
   Cuadrado(): ladoCua(0.0){};
   Cuadrado(double laCua): ladoCua(laCua){};
   double CalcAreaCua();
+  double get_ladoCua();
   void setladoCua(double laCua);
 
   private:
