@@ -26,6 +26,8 @@ class Rectangulo{
   public:
   Rectangulo(): largoRec(0.0), anchoRec(0.0){};
   double CalcAreaRec();
+  double get_largoRec();
+  double get_anchoRec();
   void setlargoRec(double laRec);
   void setanchoRec(double anRec);
 
@@ -37,6 +39,7 @@ class Circulo{
   public:
   Circulo(): radioCirc(0.0){};
   double CalcAreaCirc();
+  double get_radioCirc();
   void setradioCirc(double radCirc);
 
   private:
