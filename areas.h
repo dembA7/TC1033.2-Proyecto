@@ -13,6 +13,8 @@ using namespace std;
 
 class Cuadrado{
   public:
+  Cuadrado(): ladoCua(0.0){};
+  Cuadrado(double laCua): ladoCua(laCua){};
   double CalcAreaCua();
   void setladoCua(double laCua);
 
@@ -22,6 +24,7 @@ class Cuadrado{
 
 class Rectangulo{
   public:
+  Rectangulo(): largoRec(0.0), anchoRec(0.0){};
   double CalcAreaRec();
   void setlargoRec(double laRec);
   void setanchoRec(double anRec);
@@ -32,6 +35,7 @@ class Rectangulo{
 
 class Circulo{
   public:
+  Circulo(): radioCirc(0.0){};
   double CalcAreaCirc();
   void setradioCirc(double radCirc);
 
