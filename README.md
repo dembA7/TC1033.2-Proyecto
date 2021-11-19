@@ -12,5 +12,5 @@ De acuerdo con el último informe PISA 2018, México se ubicó en los últimos l
 El objetivo de este programa es servir como apoyo a estudiantes del grado primaria, específicamente dentro del área de matemáticas, para calcular el área de distintas figuras geométricas.
 
 ### Consideraciones
-El programa está hecho con c++ standard.
+El programa está hecho con c++ standard. \n
 El archivo DiagramaDeClases.png contiene el diagrama de clases en lenguaje UML propuesto para la solución de este problema.
