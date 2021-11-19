@@ -13,63 +13,6 @@
 #include "areas.h"
 using namespace std;
 
-// Para Cuadrado
-
-double Cuadrado::CalcAreaCua(){
-  return ladoCua * ladoCua;
-}
-
-double Cuadrado::get_ladoCua(){
-  return ladoCua;
-}
-
-void Cuadrado::setladoCua(double laCua){
-  ladoCua = laCua;
-}
-
-
-// Para Rectangulo
-
-double Rectangulo::CalcAreaRec(){
-  return largoRec*anchoRec;
-}
-
-double Rectangulo::get_largoRec(){
-  return largoRec;
-}
-
-double Rectangulo::get_anchoRec(){
-  return anchoRec;
-}
-
-void Rectangulo::setlargoRec(double laRec){
-  largoRec = laRec;
-}
-
-void Rectangulo::setanchoRec(double anRec){
-  anchoRec = anRec;
-}
-
-
-// Para Circulo
-
-double Circulo::CalcAreaCirc(){
-  return 3.14 * radioCirc * radioCirc;
-}
-
-double Circulo::get_radioCirc(){
-  return radioCirc;
-}
-
-void Circulo::setradioCirc(double radCirc){
-  radioCirc = radCirc;
-}
-
-
-
-// Main
-
-
 int main() {
   
   // Para Cuadrado
