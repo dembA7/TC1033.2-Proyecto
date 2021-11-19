@@ -24,7 +24,6 @@ int main() {
   areaCua = cuadrado1.CalcAreaCua();
   cout << "El área del cuadrado es " << areaCua << " ";
   cout << "si el lado vale " << cuadrado1.get_ladoCua() << endl;
-  return 0;
 
   // Para Rectangulo
 
@@ -34,9 +33,9 @@ int main() {
   rectangulo2.setlargoRec(10);
   rectangulo2.setanchoRec(5);
   areaRec = rectangulo2.CalcAreaRec();
-  cout << "El área del rectángulo es " << areaRec << endl;
-  // cout << "si el largo vale " << rectangulo2.get_largoRec() << "y el ancho vale " << rectangulo2.get_anchoRec(); << " ";
-  return 0;
+  cout  << "El área del rectángulo es " << areaRec
+        << "si el largo vale " << rectangulo2.get_largoRec() 
+        << " y el ancho vale " << rectangulo2.get_anchoRec() << endl;
 
   // Para Circulo
 
