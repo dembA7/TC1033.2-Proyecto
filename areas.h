@@ -10,6 +10,8 @@
 #include <iostream>
 using namespace std;
 
+// Creacion de la clase Cuadrado
+
 class Cuadrado{
   public:
   Cuadrado(): ladoCua(0.0){};
@@ -36,6 +38,7 @@ void Cuadrado::setladoCua(double laCua){
   ladoCua = laCua;
 }
 
+// Creacion de la clase Rectangulo
 
 class Rectangulo{
   public:
@@ -72,6 +75,7 @@ void Rectangulo::setanchoRec(double anRec){
   anchoRec = anRec;
 }
 
+// Creacion de la clase Circulo
 
 class Circulo{
   public:
