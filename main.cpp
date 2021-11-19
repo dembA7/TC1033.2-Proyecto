@@ -34,7 +34,7 @@ int main() {
   rectangulo2.setanchoRec(5);
   areaRec = rectangulo2.CalcAreaRec();
   cout  << "El área del rectángulo es " << areaRec
-        << "si el largo vale " << rectangulo2.get_largoRec() 
+        << " si el largo vale " << rectangulo2.get_largoRec() 
         << " y el ancho vale " << rectangulo2.get_anchoRec() << endl;
 
   // Para Circulo
