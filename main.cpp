@@ -10,7 +10,9 @@
 */
 
 #include <iostream>
-#include "areas.h"
+#include "cuadrado.h"
+#include "rectangulo.h"
+#include "circulo.h"
 using namespace std;
 
 int main() {
@@ -21,9 +23,16 @@ int main() {
   double areaCua;
   
   cuadrado1.setladoCua(5);
+  cuadrado1.setnumLados(4);
+  cuadrado1.setnumVertices(4);
   areaCua = cuadrado1.CalcAreaCua();
-  cout << "El área del cuadrado es " << areaCua << " ";
-  cout << "si el lado vale " << cuadrado1.get_ladoCua() << endl;
+  cout << " El área del cuadrado es " << areaCua;
+  cout << " si el lado vale " << cuadrado1.get_ladoCua() << endl;
+  cout << " además, la figura tiene " << cuadrado1.get_numLados();
+  cout << " lados, y " << cuadrado1.get_numVertices();
+  cout << " vértices." << endl;
+  
+  cout << " " << endl;
 
   // Para Rectangulo
 
@@ -32,19 +41,32 @@ int main() {
 
   rectangulo2.setlargoRec(10);
   rectangulo2.setanchoRec(5);
+  rectangulo2.setnumLados(4);
+  rectangulo2.setnumVertices(4);
   areaRec = rectangulo2.CalcAreaRec();
-  cout  << "El área del rectángulo es " << areaRec
-        << " si el largo vale " << rectangulo2.get_largoRec() 
-        << " y el ancho vale " << rectangulo2.get_anchoRec() << endl;
+  cout  << " El área del rectángulo es " << areaRec;
+  cout  << " si el largo vale " << rectangulo2.get_largoRec() << endl; 
+  cout  << " y el ancho vale " << rectangulo2.get_anchoRec();
+  cout  << " además, la figura tiene " << cuadrado1.get_numLados();
+  cout  << " lados, y " << cuadrado1.get_numVertices();
+  cout  << " vértices." << endl;
 
+  cout << " " << endl;
+  
   // Para Circulo
 
   Circulo circulo3;
   double areaCirc;
 
   circulo3.setradioCirc(6);
-  areaCirc =circulo3.CalcAreaCirc();
-  cout << "El área del círculo es " << areaCirc << " ";
-  cout << "si el radio vale " << circulo3.get_radioCirc() << endl;
+  circulo3.setnumLados(0);
+  circulo3.setnumVertices(0);
+  areaCirc = circulo3.CalcAreaCirc();
+  cout << " El área del círculo es " << areaCirc << " ";
+  cout << " si el radio vale " << circulo3.get_radioCirc() << endl;
+  cout << " además, la figura tiene " << cuadrado1.get_numLados();
+  cout << " lados, y " << cuadrado1.get_numVertices();
+  cout << " vértices." << endl;
+  
   return 0;
 } 
