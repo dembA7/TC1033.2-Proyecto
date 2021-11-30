@@ -1,12 +1,12 @@
 /*
   Proyecto Areas
-  Arturo Cristián Díaz López
+  Arturo Cristian Diaz Lopez
   A01709522
   12/11/2021
  */
 
 /**
- El objetivo de este programa es servir como apoyo a estudiantes del grado primaria, especificamente dentro del area de matemáticas, para calcular el area de distintas figuras geometricas.
+ El objetivo de este programa es servir como apoyo a estudiantes del grado primaria, especificamente dentro del area de matematicas, para calcular el area de distintas figuras geometricas.
 */
 
 #include <iostream>
