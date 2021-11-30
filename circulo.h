@@ -1,11 +1,11 @@
 /*
- * Proyecto Áreas
- * Arturo Cristián Díaz López 
+ * Proyecto Areas
+ * Arturo Cristian Diaz Lopez 
  * A01709522
  * 12/11/2021
  */
 
-// Creación de clases y declaración de funciones.
+// Creacion de clases y declaracion de funciones.
 
 #ifndef CIRCULO_H
 #define CIRCULO_H
