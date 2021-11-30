@@ -1,11 +1,11 @@
 /*
- * Proyecto Áreas
- * Arturo Cristián Díaz López 
+ * Proyecto Areas
+ * Arturo Cristian Diaz Lopez 
  * A01709522
  * 12/11/2021
  */
 
-// Creación de clase padre Figura y declaración de funciones.
+// Creacion de clase padre Figura y declaracion de funciones.
 
 #ifndef FIGURA_H
 #define FIGURA_H
