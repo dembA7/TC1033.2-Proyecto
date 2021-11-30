@@ -1,11 +1,11 @@
 /*
- * Proyecto Áreas
- * Arturo Cristián Díaz López 
+ * Proyecto Areas
+ * Arturo Cristian Diaz Lopez 
  * A01709522
  * 12/11/2021
  */
 
-// Creación de clase Cuadrado y declaración de sus funciones.
+// Creacion de clase Cuadrado y declaracion de sus funciones.
 
 #ifndef CUADRADO_H
 #define CUADRADO_H
