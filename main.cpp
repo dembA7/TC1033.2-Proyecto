@@ -68,5 +68,12 @@ int main() {
   cout << " lados, y " << cuadrado1.get_numVertices();
   cout << " vertices." << endl;
   
+  // Para Perimetros
+
+  cout << " El perimetro del cuadrado con valor de lado 5 es " << periCua << endl;
+  cout << " El perimetro del rectangulo con valor de largo 10 y valor de ancho 5 es " 
+       << periRec << endl;
+  cout << " El perimetro del circulo con valor de radio 6 es " << periCirc << endl;
+
   return 0;
 } 
