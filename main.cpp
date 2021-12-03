@@ -33,7 +33,7 @@ int main() {
   cout << " vertices." << endl;
   
   cout << "Basado en estos valores, el perimetro de la figura es: " 
-       << perimCua.CalcPeriCua(6) << endl;
+       << perimCua.CalcPeriCua(4) << endl;
   
   cout << " " << endl;
 
