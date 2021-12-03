@@ -15,3 +15,4 @@ El objetivo de este programa es servir como apoyo a estudiantes del grado primar
 * El programa está hecho con c++ standard. 
 * El archivo DiagramaDeClases.png contiene el diagrama de clases en lenguaje UML propuesto para la solución de este problema.
 * Los archivos cuadrado.h, rectangulo.h, y circulo.h, contienen a las clases hijas de la clase Figura, guardada en el archivo figura.h
+* El archivo perimetro.h contiene lo correspndiente a agregación.
