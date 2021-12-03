@@ -26,9 +26,9 @@ int main() {
   
   areaCua = cuadrado1.CalcAreaCua();
   
-  cout << " El area del cuadrado es " << areaCua;
+  cout << "El area del cuadrado es " << areaCua;
   cout << " si el lado vale " << cuadrado1.get_ladoCua() << endl;
-  cout << " ademas, la figura tiene " << cuadrado1.get_numLados();
+  cout << "Ademas, la figura tiene " << cuadrado1.get_numLados();
   cout << " lados, y " << cuadrado1.get_numVertices();
   cout << " vertices." << endl;
   
