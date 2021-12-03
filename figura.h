@@ -10,27 +10,29 @@
 #ifndef FIGURA_H
 #define FIGURA_H
 
-#include <iostream>
 #include "perimetro.h"
-using namespace std;
 
 // Creacion de la clase Figura.
 
-
 class Figura{
   public:
-  Figura(): numLados(0), numVertices(0){};
-  Perimetro PCua;
-  Perimetro PRec;
-  Perimetro PCirc;
-  int get_numLados();
-  int get_numVertices();
-  void setnumLados(int numLad);
-  void setnumVertices(int numVert);
+    Figura(): numLados(0), numVertices(0){};
+    Figura(int lados, int vertices) : numLados(lados), numVertices(vertices) {};
+  
+    int get_numLados();
+    int get_numVertices();
+    Perimetro get_perimetro();
+  
+    void set_numLados(int );
+    void set_numVertices(int );
+    void set_perimetro(Perimetro );
 
+    void agrega_perimetro(Perimetro );
+    Perimetro perimetro_fig;
   private: 
-  int numLados;
-  int numVertices;
+    int numLados;
+    int numVertices;
+    
 };
 
 // Funciones de la clase Figura.
@@ -43,37 +45,24 @@ int Figura::get_numVertices(){
   return numVertices;
 }
 
-void Figura::setnumLados(int numLad){
+void Figura::set_numLados(int numLad){
   numLados = numLad;
 }
 
-void Figura::setnumVertices(int numVert){
+void Figura::set_numVertices(int numVert){
   numVertices = numVert;
 }
 
-
-int perimetro(){
-  
-  // Para Cuadrado
-
-  Perimetro PCua;
-  float periCua;
-  periCua = PCua.CalcPeriCua(5);
-
-  // Para Rectangulo
-
-  Perimetro PRec;
-  float periRec;
-  periRec = PRec.CalcPeriRec(10, 4);
-
-  // Para Circulo
-
-  Perimetro PCirc;
-  float periCirc;
-  periCirc = PCirc.CalcPeriCirc(6);
-
-return 0;
+void Figura::agrega_perimetro(Perimetro p1){
+    perimetro_fig = p1;
 }
 
+Perimetro Figura::get_perimetro(){
+  return perimetro_fig;
+}
+
+void Figura::set_perimetro(Perimetro per){
+  perimetro_fig = per;
+}
 
 #endif
