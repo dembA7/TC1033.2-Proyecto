@@ -80,4 +80,4 @@ int main() {
        << perimCirc.CalcPeriCirc(6) << endl;
 
   return 0;
-} 
+}
