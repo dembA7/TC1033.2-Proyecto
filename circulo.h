@@ -10,7 +10,6 @@
 #ifndef CIRCULO_H
 #define CIRCULO_H
 
-#include <iostream>
 using namespace std;
 #include "figura.h"
 
@@ -18,13 +17,21 @@ using namespace std;
 
 class Circulo: public Figura{
   public:
-  Circulo(): radioCirc(0.0){};
-  double CalcAreaCirc();
-  double get_radioCirc();
-  void setradioCirc(double radCirc);
+    Circulo(): radioCirc(0.0){};
+    Circulo(int ladoCi, int vertCi) : Figura(ladoCi, vertCi),
+    ladoCirc(ladoCi), verticeCirc(vertCi) {};
+    
+    double get_radioCirc();
+    double get_verticeCirc();
+    void setradioCirc(double radCirc);
+    void set_verticeCirc(double );
+    
+    double CalcAreaCirc();
 
   private:
-   double radioCirc;
+    double radioCirc;
+    double ladoCirc;
+    double verticeCirc;
 };
 
 // Funciones de la clase Circulo.
@@ -39,6 +46,14 @@ double Circulo::get_radioCirc(){
 
 void Circulo::setradioCirc(double radCirc){
   radioCirc = radCirc;
+}
+
+double Circulo::get_verticeCirc() {
+  return verticeCirc;
+}
+
+void Circulo::set_verticeCirc(double vertCi){
+  verticeCirc = vertCi;
 }
 
 #endif
